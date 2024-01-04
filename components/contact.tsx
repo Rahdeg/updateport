@@ -129,7 +129,7 @@ const ContactMe = () => {
                         delay: 0.4
                     }}
                     className=' flex items-center justify-around w-52'>
-                    <img src="/leaf.png" alt='dd' className=' w-6 h-auto object-contain' />
+                    <img src="Leaf.png" alt='dd' className=' w-6 h-auto object-contain' />
                     <p
                         className='text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary to-secondary '
 
