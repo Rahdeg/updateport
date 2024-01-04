@@ -133,7 +133,7 @@ const ContactMe = () => {
                     <p
                         className='text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary to-secondary '
 
-                    >Projects</p>
+                    >Contact</p>
                     <img src="/leaf2.png" alt='dd' className=' w-6 h-auto object-contain' />
                 </motion.div>
             </div>
