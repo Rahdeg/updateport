@@ -34,9 +34,38 @@ const Skills = () => {
                         className='text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary to-secondary '
 
                     >My Skills & Work Experience</p>
-                    <p className=' text-texlight text-base  tracking-wide text-justify'>
-                        I create interactive experiences for people using modern web technology,independent fellow who has soft spot for team/group work. Committed to high standards of service, performance and integrity. Dedicated and reliable with organized, proactive and problem-solving nature.
+                    <p className=' text-texlight text-base   tracking-wide text-justify'>
+                        My expertise extends across the following areas:
+
+                        Full-Stack Development: Proficient in crafting end-to-end solutions that seamlessly merge functionality and aesthetics.
+                        HTML/CSS: Mastery in structuring web content and styling for optimal user interaction.
+                        React/Next.js: Leveraging these frameworks to build dynamic and responsive web applications.
+                        Node.js: Utilizing the power of server-side scripting for robust backend development.
+                        Databases (MongoDB, MySQL): Experience in database management, ensuring efficient data handling for applications.<br />
+
+                        <span className='text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary to-secondary '> Work Experience:</span><br />
+                        Reown
+                        Freelancer
+                        September 2023 -  Till date
+                        <br />
+                        Tracksend
+                        Software Developer
+                        April 2023 - September 2023 (6 months)
+                        <br />
+                        IYSI GLOBAL RES LTD
+                        BACKEND DEVELOPER
+                        September 2022 - January 2023 (5 months)
+                        <br />
+                        Zuri Team, Inc.
+                        LEAD FRONTEND DEVELOPER
+                        September 2022 - November 2022 (3 months)
+                        <br />
+                        Walettcafe - Frontend Developer
+                        November 2020 - January 2022 (1 year 3 months)
+
                     </p>
+
+
                 </div>
                 <div className='w-full flex flex-col items-center justify-center px-8 gap-4'>
                     <SkillCard skill={'HTML5'} percentage={'90%'} color={'#FF3F3F'} move />
