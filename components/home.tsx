@@ -43,7 +43,7 @@ const HomePage = () => {
 
                             >Hire me</p>
                         </a>
-                        <a href='https://drive.google.com/file/d/1HGBOsJCL7FKpJ3GDehy1e9ThayXI888K/view' rel="" target="_blank"
+                        <a href='https://drive.google.com/file/d/1qlOfx9FQlmmfQpebVSqUU5yC1AtexUzk/view' rel="" target="_blank"
                             style={{ boxShadow: "inset 0 0 10px rgba(225,225,225,0.3)" }}
                             className=' mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary'
 
