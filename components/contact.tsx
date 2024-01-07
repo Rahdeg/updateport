@@ -2,7 +2,7 @@
 "use client"
 import React, { useState } from 'react'
 import * as z from "zod"
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { AnimatePresence, motion } from 'framer-motion'
@@ -19,6 +19,8 @@ import {
 import { db } from '@/config/firebase.config';
 import Alert from './alert';
 import { useRouter } from 'next/navigation';
+import { Loader2 } from 'lucide-react';
+import { useAlertStore } from '@/hooks/use-notification';
 
 
 const formSchema = z.object({
@@ -26,13 +28,15 @@ const formSchema = z.object({
     lastName: z.string().min(2).max(50),
     email: z.string().email().min(2).max(50),
     message: z.string().min(2).max(50),
-})
+    date: z.date().default(() => new Date()) // Include current date using default value
+});
 
-type AlertState = {
-    isAlert: boolean;
-    message: string;
-    status: string | null; // status can be either string or null
-};
+
+// export type AlertState = {
+//     isAlert: boolean;
+//     message: string;
+//     status: string | null; // status can be either string or null
+// };
 
 
 
@@ -42,13 +46,15 @@ const ContactMe = () => {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
 
-    const [alert, setAlert] = useState<AlertState>(
-        {
-            isAlert: false,
-            message: "",
-            status: null,
-        }
-    )
+    const { alert, setAlert } = useAlertStore();
+
+    // const [alert, setAlert] = useState<AlertState>(
+    //     {
+    //         isAlert: false,
+    //         message: "",
+    //         status: null,
+    //     }
+    // )
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -61,10 +67,16 @@ const ContactMe = () => {
     })
 
     const saveData = async (data: any) => {
-        setLoading(true); // Set loading to true when action starts
+        setLoading(true); // Set loading to true when action starts 
+        const dataWithDate = {
+            ...data,
+            date: serverTimestamp(), // Use serverTimestamp to get the current date on Firestore server
+        };
 
         try {
-            await addDoc(collection(db, "messages"), data);
+            await addDoc(collection(db, "messages"), dataWithDate);
+
+
             setAlert({
                 isAlert: true,
                 message: "Thanks for Contacting me",
@@ -210,7 +222,7 @@ const ContactMe = () => {
                         <div className='w-full flex items-center justify-center lg:justify-end'>
                             <button type='submit' disabled={loading} className='px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-bg-black hover:border hover:border-primary hover:text-primary '>
                                 {
-                                    loading ? ("loading....") : ("Send")
+                                    loading ? (<Loader2 className=' text-white w-5 h-5 animate-spin text-center   ' />) : ("Send")
                                 }
                             </button>
                         </div>
