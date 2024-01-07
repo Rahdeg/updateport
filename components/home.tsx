@@ -20,10 +20,10 @@ const HomePage = () => {
                         And I&apos;m{" "}
                         <Typewriter words={["a Developer..", "a Freelancer.."]} speed={100} />
                     </h2>
-                    <p className=' text-base lg:text-xl text-center text-texlight  mt-6'>
+                    <p className=' text-base px-5 lg:px-0 lg:text-xl text-center text-texlight  mt-6'>
                         I create interactive experiences for people using modern web technology,independent fellow who has soft spot for team/group work. Committed to high standards of service, performance and integrity. Dedicated and reliable with organized, proactive and problem-solving nature.i have a solid foundation in science and a fervor for creative expression through technology, ventured into the world of web development armed with a wealth of experience and a diverse skill set.
                     </p>
-                    <div className=' flex items-center justify-center mt-16 gap-16'>
+                    <div className=' flex items-center justify-center mt-16  gap-8 lg:gap-16'>
                         <AnimatePresence>
                             {
                                 Socials && Socials.map((social, index) => (

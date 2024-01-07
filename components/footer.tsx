@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className='w-full flex flex-col items-center justify-start mt-32 mb-12'>
             <p className=' text-3xl tracking-wide text-texlight'> Adegbite Raheem</p>
-            <div className=' flex items-center justify-center gap-16 mt-16'>
+            <div className=' flex items-center justify-center lg:gap-16 gap-8 mt-16'>
                 <AnimatePresence>
                     {
                         Socials && Socials.map((social, index) => (
