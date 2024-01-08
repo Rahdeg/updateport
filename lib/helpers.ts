@@ -47,25 +47,25 @@ export const Socials = [
   {
     id: `facebook-${Date.now()}`,
     Icon: FaFacebookF,
-    url: "",
+    url: "https://m.facebook.com/profile.php/?id=100003154060853&name=xhp_nt__fb__action__open_user",
     color: "#1877F2",
   },
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    url: "",
+    url: "https://www.linkedin.com/in/raheemadegbite/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    url: "",
+    url: "https://github.com/Rahdeg",
     color: "#fff",
   },
   {
     id: `x-${Date.now()}`,
     Icon: FaX,
-    url: "",
+    url: "https://twitter.com/Walett25",
     color: "#ff0000",
   },
 ];

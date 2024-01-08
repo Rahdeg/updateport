@@ -64,8 +64,8 @@ export function DataTable<TData, TValue>({
     })
 
     return (
-        <div>
-            <div className="flex items-center py-4 gap-x-3">
+        <div >
+            <div className="flex items-center py-4 gap-x-3 ">
                 <Input
                     placeholder="Search..."
                     value={(table.getColumn(searchKey)?.getFilterValue() as string) ?? ""}
@@ -78,7 +78,7 @@ export function DataTable<TData, TValue>({
                     <RefreshCcw className="w-5 h-5 " />
                 </Button>
             </div>
-            <div className="rounded-md border">
+            <div className="rounded-md border ">
                 <Table>
                     <TableHeader >
                         {table.getHeaderGroups().map((headerGroup) => (

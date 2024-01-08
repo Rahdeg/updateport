@@ -32,11 +32,6 @@ const formSchema = z.object({
 });
 
 
-// export type AlertState = {
-//     isAlert: boolean;
-//     message: string;
-//     status: string | null; // status can be either string or null
-// };
 
 
 
@@ -48,13 +43,6 @@ const ContactMe = () => {
 
     const { alert, setAlert } = useAlertStore();
 
-    // const [alert, setAlert] = useState<AlertState>(
-    //     {
-    //         isAlert: false,
-    //         message: "",
-    //         status: null,
-    //     }
-    // )
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
