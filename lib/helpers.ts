@@ -72,6 +72,12 @@ export const Socials = [
 
 export const ProjectsData = [
   {
+    id: `pixabayclone-${Date.now()}`,
+    name: "Raw Stream",
+    imgSrc: "/raw.png",
+    gitURL: "https://github.com/Rahdeg/twitch",
+  },
+  {
     id: `food-${Date.now()}`,
     name: "Advance Organization Todo",
     imgSrc: "/taskys.png",
@@ -100,11 +106,5 @@ export const ProjectsData = [
     name: "Gallery App",
     imgSrc: "/picture3.png",
     gitURL: "https://github.com/Rahdeg/hngx3",
-  },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Tithe App",
-    imgSrc: "/tithe.png",
-    gitURL: "https://github.com/Rahdeg/TitheBox",
   },
 ];
