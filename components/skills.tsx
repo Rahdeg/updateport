@@ -7,7 +7,7 @@ import SkillCard from './skill-card'
 
 const Skills = () => {
     return (
-        <section id='skills' className='flex items-center justify-center gap-12 flex-col my-12'>
+        <section id='skills' className='flex items-center justify-center gap-12 flex-col my-12 lg:px-10'>
             <div className='flex items-center justify-center w-full py-24'>
                 <motion.div
                     initial={{ opacity: 0, width: 0 }}

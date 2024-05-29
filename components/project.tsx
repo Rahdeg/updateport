@@ -8,7 +8,7 @@ import ProjectCard from './project-card'
 
 const Projects = () => {
     return (
-        <section id='projects' className='flex items-center justify-center gap-12 flex-col my-12'>
+        <section id='projects' className='flex items-center justify-center gap-12 flex-col my-12 lg:px-10'>
             <div className='flex items-center justify-center w-full py-24'>
                 <motion.div
                     initial={{ opacity: 0, width: 0 }}
