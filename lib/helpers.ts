@@ -72,12 +72,17 @@ export const Socials = [
 
 export const ProjectsData = [
   {
-    id: `reowhome-${Date.now()}`,
-    name: "Reown Website",
-    imgSrc: "/rehome.png",
+    id: `reownapp-${Date.now()}`,
+    name: "Reown Application",
+    imgSrc: "/reapp.png",
     url: "https://www.reown.africa/",
-    gitURL: "https://www.reown.africa/",
-    features: ["LandingPage", "Contacts", "Supports", "Admin"],
+    gitURL: "private",
+    features: [
+      "Authentication",
+      "Track Vehicle Report",
+      "Manage Vehicle report",
+      "Booking Estimate",
+    ],
   },
   {
     id: `finance-${Date.now()}`,
@@ -94,17 +99,12 @@ export const ProjectsData = [
   },
 
   {
-    id: `reownapp-${Date.now()}`,
-    name: "Reown Application",
-    imgSrc: "/reapp.png",
+    id: `reowhome-${Date.now()}`,
+    name: "Reown Website",
+    imgSrc: "/rehome.png",
     url: "https://www.reown.africa/",
-    gitURL: "private",
-    features: [
-      "Authentication",
-      "Track Vehicle Report",
-      "Manage Vehicle report",
-      "Booking Estimate",
-    ],
+    gitURL: "https://www.reown.africa/",
+    features: ["LandingPage", "Contacts", "Supports", "Admin"],
   },
   {
     id: `pixabayclone-${Date.now()}`,
