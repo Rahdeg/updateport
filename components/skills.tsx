@@ -34,7 +34,7 @@ const Skills = () => {
                         className='text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary to-secondary '
 
                     >My Skills & Work Experience</p>
-                    <p className=' text-texlight text-base   tracking-wide text-justify'>
+                    <p className=' text-white text-base   tracking-wide text-justify'>
                         My expertise extends across the following areas:
 
                         Full-Stack Development: Proficient in crafting end-to-end solutions that seamlessly merge functionality and aesthetics.
@@ -43,7 +43,7 @@ const Skills = () => {
                         Node.js: Utilizing the power of server-side scripting for robust backend development.
                         Databases (MongoDB, MySQL): Experience in database management, ensuring efficient data handling for applications.<br />
 
-                        <span className='text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary to-secondary '> Work Experience:</span><br />
+                        <span className=' block py-5 text-transparent bg-clip-text text-texlight bg-gradient-to-r from-primary  to-secondary '> Work Experience:</span>
                         Reown
                         Freelancer
                         September 2023 -  Till date
@@ -70,7 +70,7 @@ const Skills = () => {
                 <div className='w-full flex flex-col items-center justify-center px-8 gap-4'>
                     <SkillCard skill={'HTML5'} percentage={'90%'} color={'#FF3F3F'} move />
                     <SkillCard skill={'TAILWIND CSS'} percentage={'85%'} color={'#008FFF'} />
-                    <SkillCard skill={'Javascript'} percentage={'75%'} color={'#FFB900'} move />
+                    <SkillCard skill={'Javascript & Typescript'} percentage={'85%'} color={'#FFB900'} move />
                     <SkillCard skill={'React & NextJs'} percentage={'80%'} color={'#00FFF3'} />
                     <SkillCard skill={'NodeJs'} percentage={'75%'} color={'#14DB00'} move />
                     <SkillCard skill={'MongoDB, Mysql, Firebase'} percentage={'75%'} color={'#FFE400'} />

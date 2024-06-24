@@ -72,17 +72,12 @@ export const Socials = [
 
 export const ProjectsData = [
   {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Raw Stream",
-    imgSrc: "/raw.png",
-    url: "https://live-raw.vercel.app/",
-    gitURL: "https://github.com/Rahdeg/twitch",
-    features: [
-      "Authentication",
-      "Live Stream",
-      "LiveChat",
-      "Social(Followers,Block)",
-    ],
+    id: `reowhome-${Date.now()}`,
+    name: "Reown Website",
+    imgSrc: "/rehome.png",
+    url: "https://www.reown.africa/",
+    gitURL: "https://www.reown.africa/",
+    features: ["LandingPage", "Contacts", "Supports", "Admin"],
   },
   {
     id: `finance-${Date.now()}`,
@@ -97,6 +92,34 @@ export const ProjectsData = [
       "Different chart types",
     ],
   },
+
+  {
+    id: `reownapp-${Date.now()}`,
+    name: "Reown Application",
+    imgSrc: "/reapp.png",
+    url: "https://www.reown.africa/",
+    gitURL: "private",
+    features: [
+      "Authentication",
+      "Track Vehicle Report",
+      "Manage Vehicle report",
+      "Booking Estimate",
+    ],
+  },
+  {
+    id: `pixabayclone-${Date.now()}`,
+    name: "Raw Stream",
+    imgSrc: "/raw.png",
+    url: "https://live-raw.vercel.app/",
+    gitURL: "https://github.com/Rahdeg/twitch",
+    features: [
+      "Authentication",
+      "Live Stream",
+      "LiveChat",
+      "Social(Followers,Block)",
+    ],
+  },
+
   {
     id: `codepen-${Date.now()}`,
     name: "Food delivery App",

@@ -35,7 +35,7 @@ const About = () => {
                 </div>
 
                 <div className=' w-full px-8 flex flex-col gap-4 items-start justify-start'>
-                    <p className=' text-texlight text-base lg:text-lg  tracking-wide text-justify'>
+                    <p className=' text-white text-base lg:text-lg  tracking-wide text-justify'>
                         I create interactive experiences for people using modern web technology,independent fellow who has soft spot for team/group work. Committed to high standards of service, performance and integrity. Dedicated and reliable with organized, proactive and problem-solving nature.
                         Driven by an insatiable curiosity and a knack for problem-solving, I leverage HTML, CSS, Tailwind, React, Next.js, Node.js, MongoDB, MySQL, and a host of other tools to craft engaging and functional websites. My journey in this realm spans over four years, during which I have honed my skills, embraced challenges, and thrived in delivering exceptional digital experiences.
                     </p>
