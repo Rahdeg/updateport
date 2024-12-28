@@ -10,6 +10,15 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_APPID,
 };
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCpUnNFfoW91bFDAcaJcfgE12EOMGUWlgw",
+//   authDomain: "mycv-702ac.firebaseapp.com",
+//   projectId: "mycv-702ac",
+//   storageBucket: "mycv-702ac.firebasestorage.app",
+//   messagingSenderId: "652886656733",
+//   appId: "1:652886656733:web:f639ef7831a399d1df7d34",
+// };
+
 const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
