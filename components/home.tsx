@@ -33,7 +33,7 @@ const HomePage = () => {
                         </AnimatePresence>
                     </div>
                     <div className='flex items-center justify-center gap-x-3'>
-                        <a href='#'
+                        <a href='#contact'
                             style={{ boxShadow: "inset 0 0 10px rgba(225,225,225,0.3)" }}
                             className=' mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary'
 
@@ -43,7 +43,7 @@ const HomePage = () => {
 
                             >Hire me</p>
                         </a>
-                        <a href='https://drive.google.com/file/d/1pmf31VoSKCDyNsn8SGXvg9P5uii0mNIJ/view?usp=drive_link' rel="" target="_blank"
+                        <a href='https://drive.google.com/file/d/1kjKTfagSgf4YuLJzKj4qDY0t-gMEG0uX/view?usp=drive_link' rel="" target="_blank"
                             style={{ boxShadow: "inset 0 0 10px rgba(225,225,225,0.3)" }}
                             className=' mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary'
 

@@ -106,19 +106,19 @@ export const ProjectsData = [
     gitURL: "https://www.reown.africa/",
     features: ["LandingPage", "Contacts", "Supports", "Admin"],
   },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Raw Stream",
-    imgSrc: "/raw.png",
-    url: "https://live-raw.vercel.app/",
-    gitURL: "https://github.com/Rahdeg/twitch",
-    features: [
-      "Authentication",
-      "Live Stream",
-      "LiveChat",
-      "Social(Followers,Block)",
-    ],
-  },
+  // {
+  //   id: `pixabayclone-${Date.now()}`,
+  //   name: "Raw Stream",
+  //   imgSrc: "/raw.png",
+  //   url: "https://live-raw.vercel.app/",
+  //   gitURL: "https://github.com/Rahdeg/twitch",
+  //   features: [
+  //     "Authentication",
+  //     "Live Stream",
+  //     "LiveChat",
+  //     "Social(Followers,Block)",
+  //   ],
+  // },
 
   {
     id: `codepen-${Date.now()}`,
